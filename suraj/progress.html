@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Habit Progress</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>✓ HabitFlow</h2>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="habits.html">My Habits</a>
+        <a href="progress.html">Progress</a>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>My Progress</h1>
+
+    <div class="stats">
+        <div class="card">
+            <h3>Total Habits</h3>
+            <h1 id="progressTotal">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Completed Today</h3>
+            <h1 id="progressDone">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Total Check-ins</h3>
+            <h1 id="allChecks">0</h1>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Daily Completion</h2>
+        <h1 id="progressPercent">0%</h1>
+
+        <div class="progress-track">
+            
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="progressMessage"></p>
+    </div>
+
+    <h2>Habit Summary</h2>
+    <div id="progressList"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

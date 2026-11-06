@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Habits</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>✓ HabitFlow</h2>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="habits.html">My Habits</a>
+        <a href="progress.html">Progress</a>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Manage My Habits</h1>
+
+    <form id="habitForm">
+        <input type="text" id="habitName"
+               placeholder="Enter habit name" required>
+
+        <select id="habitCategory">
+            <option>Health</option>
+            <option>Fitness</option>
+            <option>Learning</option>
+            <option>Personal</option>
+            <option>Other</option>
+        </select>
+
+        <select id="habitTime">
+            <option>Every day</option>
+            <option>Weekdays</option>
+            <option>Weekends</option>
+        </select>
+
+        <button type="submit">Add Habit</button>
+    </form>
+
+    <h2>My Habit List</h2>
+    <div id="allHabits"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
